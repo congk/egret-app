@@ -1,7 +1,8 @@
 {
 	"native": {
 		"path_ignore": [],
-		"ios_path": "../puzzle-ios"
+		"ios_path": "../puzzle-ios",
+		"android_path": "../puzzle-android"
 	},
 	"publish": {
 		"web": 0,
