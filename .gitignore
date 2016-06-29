@@ -1,3 +1,5 @@
 */bin-debug
 */bin-release
 */libs/*
+*.a
+*.framework
