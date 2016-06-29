@@ -1,3 +1,3 @@
-puzzle/bin-debug/*
-puzzle/bin-release/*
-puzzle/libs/*
+*/bin-debug
+*/bin-release
+*/libs/*
