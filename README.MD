@@ -1,6 +1,6 @@
 ###工程创建流程：
 1. 创建web工程：`egret create puzzle [--type game]`
-2. 创建ios工程：`egret create_app puzzle-ios -f pupzzle -t egret-ios-support-3.1.3`
+2. 创建ios工程：`egret create_app puzzle-ios -f puzzle -t egret-ios-support-3.1.3`
 
 ###目录结构：
 - egret-ios-support-3.1.3：ios打包工具，v3.1.3
