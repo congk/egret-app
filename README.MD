@@ -9,5 +9,6 @@
 - puzzle：web工程目录
 - puzzle_ios：ios工程目录
 - puzzle_android：android工程目录
+- app_build：ant配置目录
 
 对h5代码修改后调用`egret build puzzle --runtime native -e`，将修改后的内容编译到ios工程中
