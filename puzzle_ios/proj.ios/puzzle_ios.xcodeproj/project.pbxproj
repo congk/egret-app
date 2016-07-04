@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		291711F31D1A91BB009133A5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 291711F21D1A91BB009133A5 /* MediaPlayer.framework */; };
+		B65B500B1BD6335F0080461D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65B500A1BD6335F0080461D /* LaunchScreen.storyboard */; };
+		B665D7931B280DA5000B09FD /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B665D7921B280DA5000B09FD /* JavaScriptCore.framework */; };
+		B67AFD111C06EF730077875C /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B67AFD101C06EF730077875C /* LoadingView.m */; };
+		B67AFD171C07086E0077875C /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B67AFD161C07086E0077875C /* libicucore.tbd */; };
+		B67AFD1B1C0708900077875C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B67AFD1A1C0708900077875C /* libz.tbd */; };
+		B6B4E04B1AC577630015D2E7 /* libEgretLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B4E04A1AC577630015D2E7 /* libEgretLib.a */; };
+		B6C1729C1B7DC24B0095644D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C1729B1B7DC24B0095644D /* StoreKit.framework */; };
+		B6C620401A01E3BC00A47638 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C6203F1A01E3BC00A47638 /* main.m */; };
+		B6C620431A01E3BC00A47638 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C620421A01E3BC00A47638 /* AppDelegate.m */; };
+		B6C620461A01E3BC00A47638 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6C620451A01E3BC00A47638 /* ViewController.mm */; };
+		B6C620491A01E3BC00A47638 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6C620471A01E3BC00A47638 /* Main.storyboard */; };
+		B6C6204B1A01E3BC00A47638 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6C6204A1A01E3BC00A47638 /* Images.xcassets */; };
+		B6C620761A02082100A47638 /* egret-game in Resources */ = {isa = PBXBuildFile; fileRef = B6C620751A02082100A47638 /* egret-game */; };
+		B6C620821A020AB500A47638 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C620811A020AB500A47638 /* AVFoundation.framework */; };
+		B6C620851A020AC300A47638 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C620831A020AC300A47638 /* OpenAL.framework */; };
+		B6C620861A020AC300A47638 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C620841A020AC300A47638 /* OpenGLES.framework */; };
+		B6C620881A020AD300A47638 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C620871A020AD300A47638 /* Foundation.framework */; };
+		B6C6208A1A020ADF00A47638 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C620891A020ADF00A47638 /* QuartzCore.framework */; };
+		B6C6208C1A020AEC00A47638 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C6208B1A020AEC00A47638 /* CoreGraphics.framework */; };
+		B6C6208E1A020B1600A47638 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C6208D1A020B1600A47638 /* AudioToolbox.framework */; };
+		B6C620901A020B2700A47638 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C6208F1A020B2700A47638 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		291711F21D1A91BB009133A5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		B65B500A1BD6335F0080461D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B665D7921B280DA5000B09FD /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = egret_libs/JavaScriptCore.framework; sourceTree = "<group>"; };
+		B67AFD0F1C06EF730077875C /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		B67AFD101C06EF730077875C /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		B67AFD161C07086E0077875C /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		B67AFD181C0708770077875C /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		B67AFD1A1C0708900077875C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B6B4E04A1AC577630015D2E7 /* libEgretLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEgretLib.a; path = egret_libs/libEgretLib.a; sourceTree = "<group>"; };
+		B6C1729B1B7DC24B0095644D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B6C6203A1A01E3BC00A47638 /* puzzle_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = puzzle_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6C6203E1A01E3BC00A47638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6C6203F1A01E3BC00A47638 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6C620411A01E3BC00A47638 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6C620421A01E3BC00A47638 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B6C620441A01E3BC00A47638 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B6C620451A01E3BC00A47638 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		B6C620481A01E3BC00A47638 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6C6204A1A01E3BC00A47638 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B6C620751A02082100A47638 /* egret-game */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "egret-game"; path = "../Resources/egret-game"; sourceTree = "<group>"; };
+		B6C620811A020AB500A47638 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B6C620831A020AC300A47638 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		B6C620841A020AC300A47638 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		B6C620871A020AD300A47638 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B6C620891A020ADF00A47638 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B6C6208B1A020AEC00A47638 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B6C6208D1A020B1600A47638 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B6C6208F1A020B2700A47638 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6C620371A01E3BC00A47638 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				291711F31D1A91BB009133A5 /* MediaPlayer.framework in Frameworks */,
+				B67AFD1B1C0708900077875C /* libz.tbd in Frameworks */,
+				B67AFD171C07086E0077875C /* libicucore.tbd in Frameworks */,
+				B6C1729C1B7DC24B0095644D /* StoreKit.framework in Frameworks */,
+				B6B4E04B1AC577630015D2E7 /* libEgretLib.a in Frameworks */,
+				B665D7931B280DA5000B09FD /* JavaScriptCore.framework in Frameworks */,
+				B6C620901A020B2700A47638 /* UIKit.framework in Frameworks */,
+				B6C6208E1A020B1600A47638 /* AudioToolbox.framework in Frameworks */,
+				B6C6208C1A020AEC00A47638 /* CoreGraphics.framework in Frameworks */,
+				B6C6208A1A020ADF00A47638 /* QuartzCore.framework in Frameworks */,
+				B6C620881A020AD300A47638 /* Foundation.framework in Frameworks */,
+				B6C620821A020AB500A47638 /* AVFoundation.framework in Frameworks */,
+				B6C620851A020AC300A47638 /* OpenAL.framework in Frameworks */,
+				B6C620861A020AC300A47638 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6C620311A01E3BC00A47638 = {
+			isa = PBXGroup;
+			children = (
+				B6C6207E1A0208F500A47638 /* Frameworks */,
+				B6C620771A02082600A47638 /* Resources */,
+				B6C6203C1A01E3BC00A47638 /* puzzle_ios */,
+				B6C6203B1A01E3BC00A47638 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6C6203B1A01E3BC00A47638 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6C6203A1A01E3BC00A47638 /* puzzle_ios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6C6203C1A01E3BC00A47638 /* puzzle_ios */ = {
+			isa = PBXGroup;
+			children = (
+				B6C620411A01E3BC00A47638 /* AppDelegate.h */,
+				B6C620421A01E3BC00A47638 /* AppDelegate.m */,
+				B6C6204A1A01E3BC00A47638 /* Images.xcassets */,
+				B6C6203E1A01E3BC00A47638 /* Info.plist */,
+				B6C620471A01E3BC00A47638 /* Main.storyboard */,
+				B6C6203D1A01E3BC00A47638 /* Supporting Files */,
+				B6C620441A01E3BC00A47638 /* ViewController.h */,
+				B6C620451A01E3BC00A47638 /* ViewController.mm */,
+				B65B500A1BD6335F0080461D /* LaunchScreen.storyboard */,
+				B67AFD0F1C06EF730077875C /* LoadingView.h */,
+				B67AFD101C06EF730077875C /* LoadingView.m */,
+			);
+			path = puzzle_ios;
+			sourceTree = "<group>";
+		};
+		B6C6203D1A01E3BC00A47638 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6C6203F1A01E3BC00A47638 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6C620771A02082600A47638 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B6C620751A02082100A47638 /* egret-game */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B6C6207E1A0208F500A47638 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				291711F21D1A91BB009133A5 /* MediaPlayer.framework */,
+				B67AFD1A1C0708900077875C /* libz.tbd */,
+				B67AFD181C0708770077875C /* libstdc++.tbd */,
+				B67AFD161C07086E0077875C /* libicucore.tbd */,
+				B6C1729B1B7DC24B0095644D /* StoreKit.framework */,
+				B665D7921B280DA5000B09FD /* JavaScriptCore.framework */,
+				B6C6208D1A020B1600A47638 /* AudioToolbox.framework */,
+				B6C620811A020AB500A47638 /* AVFoundation.framework */,
+				B6C6208B1A020AEC00A47638 /* CoreGraphics.framework */,
+				B6C620871A020AD300A47638 /* Foundation.framework */,
+				B6B4E04A1AC577630015D2E7 /* libEgretLib.a */,
+				B6C620831A020AC300A47638 /* OpenAL.framework */,
+				B6C620841A020AC300A47638 /* OpenGLES.framework */,
+				B6C620891A020ADF00A47638 /* QuartzCore.framework */,
+				B6C6208F1A020B2700A47638 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6C620391A01E3BC00A47638 /* puzzle_ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6C6205D1A01E3BC00A47638 /* Build configuration list for PBXNativeTarget "puzzle_ios" */;
+			buildPhases = (
+				B6C620361A01E3BC00A47638 /* Sources */,
+				B6C620371A01E3BC00A47638 /* Frameworks */,
+				B6C620381A01E3BC00A47638 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = puzzle_ios;
+			productName = puzzle_ios;
+			productReference = B6C6203A1A01E3BC00A47638 /* puzzle_ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6C620321A01E3BC00A47638 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = egret;
+				TargetAttributes = {
+					B6C620391A01E3BC00A47638 = {
+						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = B6C620351A01E3BC00A47638 /* Build configuration list for PBXProject "puzzle_ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6C620311A01E3BC00A47638;
+			productRefGroup = B6C6203B1A01E3BC00A47638 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6C620391A01E3BC00A47638 /* puzzle_ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6C620381A01E3BC00A47638 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6C620761A02082100A47638 /* egret-game in Resources */,
+				B65B500B1BD6335F0080461D /* LaunchScreen.storyboard in Resources */,
+				B6C620491A01E3BC00A47638 /* Main.storyboard in Resources */,
+				B6C6204B1A01E3BC00A47638 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6C620361A01E3BC00A47638 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6C620461A01E3BC00A47638 /* ViewController.mm in Sources */,
+				B67AFD111C06EF730077875C /* LoadingView.m in Sources */,
+				B6C620431A01E3BC00A47638 /* AppDelegate.m in Sources */,
+				B6C620401A01E3BC00A47638 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B6C620471A01E3BC00A47638 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6C620481A01E3BC00A47638 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6C6205B1A01E3BC00A47638 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6C6205C1A01E3BC00A47638 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6C6205E1A01E3BC00A47638 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/egret_libs",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/egret_libs/include",
+				);
+				INFOPLIST_FILE = puzzle_ios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/egret_libs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.egret.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		B6C6205F1A01E3BC00A47638 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/egret_libs",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/egret_libs/include",
+				);
+				INFOPLIST_FILE = puzzle_ios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/egret_libs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.egret.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6C620351A01E3BC00A47638 /* Build configuration list for PBXProject "puzzle_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6C6205B1A01E3BC00A47638 /* Debug */,
+				B6C6205C1A01E3BC00A47638 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6C6205D1A01E3BC00A47638 /* Build configuration list for PBXNativeTarget "puzzle_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6C6205E1A01E3BC00A47638 /* Debug */,
+				B6C6205F1A01E3BC00A47638 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6C620321A01E3BC00A47638 /* Project object */;
+}

@@ -1,13 +1,13 @@
 ###工程创建流程：
 1. 创建web工程：`egret create puzzle [--type game]`
-2. 创建ios工程：`egret create_app puzzle-ios -f puzzle -t egret-ios-support-3.1.3`
-3. 创建android工程：`egret create_app puzzle-android -f puzzle -t egret-android-support-3.1.3`
+2. 创建ios工程：`egret create_app puzzle_ios -f puzzle -t egret-ios-support-3.1.3`
+3. 创建android工程：`egret create_app puzzle_android -f puzzle -t egret-android-support-3.1.3`
 
 ###目录结构：
 - egret-ios-support-3.1.3：ios打包工具
 - egret-android-support-3.1.3：android打包工具
 - puzzle：web工程目录
-- puzzle-ios：ios工程目录
-- puzzle-android：android工程目录
+- puzzle_ios：ios工程目录
+- puzzle_android：android工程目录
 
 对h5代码修改后调用`egret build puzzle --runtime native -e`，将修改后的内容编译到ios工程中
