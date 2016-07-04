@@ -3,3 +3,5 @@
 */libs/*
 *.a
 *.framework
+puzzle_android/proj.android/bin/
+puzzle_android/proj.android/gen/
