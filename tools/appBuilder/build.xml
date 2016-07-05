@@ -9,11 +9,7 @@
 	
 	<!-- 单独打包android版本 -->
 	<target name="android" description="build android">
-		<echo message="sdk-folder = ${sdk-folder}"/>
-		<echo message="sdk-platform-folder = ${sdk-platform-folder}"/>
-		<echo message="sdk-tools = ${sdk-tools}"/>
-		<echo message="sdk-platform-tools = ${sdk-platform-tools}"/>
-		<echo message="aapt = ${aapt}"/>
+		<echo message="${basedir}"></echo>
 	</target>
 
 	<!-- 单独打包ios版本 -->
