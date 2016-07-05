@@ -12,5 +12,6 @@
 	+ egret-android-support-3.1.3：android打包工具
 	+ appBuilder：app发布配置，ant调用
 	+ apps：打包的apk与ipa存放目录
+	+ keys：打包中所需要的ios、android证书
 
 对h5代码修改后调用`egret build puzzle --runtime native -e`，将修改后的内容同步到ios及android工程中

@@ -1,17 +1,35 @@
 <?xml version="1.0"?>
-<project name="${name}" default="android">
+<project name="${name}" default="default">
 	<!-- 运行时环境变量 -->
 	<property environment="env"/>
 	<property file="build.properties"/>
 	
-	<!-- 默认任务：打包ios与android -->
-	<!-- <target name="all" depends="android, ios" description="build ios and android"></target> -->
-	
-	<!-- 单独打包android版本 -->
-	<target name="android" description="build android">
-		<echo message="${basedir}"></echo>
+	<echo message="开始打包工程：${name}"/>
+
+	<!-- 打包android版本 -->
+	<target name="android" depends="android-debug,android-release" description="build debug and release version for android">
+		<echo message="android 打包完成！"/>
+	</target>
+	<target name="android-release" description="build release version for android">
+		<echo message="android-release 版本打包完成！"/>
+	</target>
+	<target name="android-debug" description="build debug version for android">
+		<echo message="android-debug 版本打包完成！"/>
 	</target>
 
-	<!-- 单独打包ios版本 -->
-   	<!-- <target name="ios" description="build ios"></target> -->
+	<!-- 打包ios版本 -->
+	<target name="ios" depends="ios-debug,ios-release" description="build debug and release version for ios">
+		<echo message="ios 打包完成！"/>
+	</target>
+	<target name="ios-release" description="build release version for ios">
+		<echo message="ios-release 版本打包完成！"/>
+	</target>
+	<target name="ios-debug" description="build debug version for ios">
+		<echo message="ios-debug 版本打包完成！"/>
+	</target>
+
+	<!-- default -->
+	<target name="default" depends="android,ios">
+		<echo message="工程发布完毕！"/>
+	</target>
 </project>
