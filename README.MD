@@ -13,4 +13,4 @@
 	+ appBuilder：app发布配置，ant调用
 	+ apps：打包的apk与ipa存放目录
 
-对h5代码修改后调用`egret build puzzle --runtime native -e`，将修改后的内容编译到ios工程中
+对h5代码修改后调用`egret build puzzle --runtime native -e`，将修改后的内容编译到ios及android工程中
