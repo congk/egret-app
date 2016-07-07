@@ -6,3 +6,5 @@
 puzzle_android/proj.android/bin/
 puzzle_android/proj.android/gen/
 tools/keys/*
+*.apk
+*.ipa
