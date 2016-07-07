@@ -124,18 +124,15 @@
 	</target>
 
 	<!-- 打包ios版本 -->
-	<target name="ios" depends="ios-debug,ios-release" description="build debug and release version for ios">
-		<echo message="ios 打包完成！"/>
-	</target>
-	<target name="ios-release" description="build release version for ios">
-		<echo message="ios-release 版本打包完成！"/>
+	<target name="ios" description="build release version for ios">
+		<echo message="Sorry, 没写完呢！"/>
 	</target>
 	<target name="ios-debug" description="build debug version for ios">
-		<echo message="ios-debug 版本打包完成！"/>
+		<echo message="Sorry, 没写完呢！"/>
 	</target>
 
 	<!-- default -->
 	<target name="default">
-		<echo message="欠缺参数：android | ios-debug | ios-release"/>
+		<echo message="请添加一个参数：android | ios | ios-debug"/>
 	</target>
 </project>
