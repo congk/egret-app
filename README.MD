@@ -14,3 +14,10 @@
 	+ keys：打包中所需要的ios、android证书
 
 对h5代码修改后调用`egret build puzzle --runtime native -e`，将修改后的内容同步到ios及android工程中
+
+###发布ios及android包
+进入tools/appBuilder文件夹，修改文件夹内的三个.properties文件：
+- build.properties：项目基本配置
+- android.properties：android发包配置
+- ios.properties：ios发包配置
+配置完成后通过命令行进入到tools/appBuilder目录下，调用`ant android`或`ant ios`进行打包
