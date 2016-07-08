@@ -20,11 +20,12 @@
 ---
 
 ###发布ios及android包
-1. 进入tools/appBuilder文件夹，修改文件夹内的三个.properties文件：
+1. 调用`egret publish puzzle --runtime navie -e`打包native项目，此时android与ios工程中的资源会被同步为正式版资源
+2. 进入tools/appBuilder文件夹，修改文件夹内的三个.properties文件：
 	- build.properties：项目基本配置
 	- android.properties：android发包配置
 	- ios.properties：ios发包配置
-2. 配置完成后通过命令行进入到tools/appBuilder目录下，调用`ant android`或`ant ios`进行打包
+3. 配置完成后通过命令行进入到tools/appBuilder目录下，调用`ant android`或`ant ios`进行打包，最终会在该目录下生成.apk或.ipa文件
 
 参考资料：
 > 1. http://blog.csdn.net/liuhe688/article/details/6679879

@@ -22,7 +22,7 @@ public class puzzle_android extends Activity {
     
     private static final String EGRET_ROOT = "egret";
     //TODO: egret publish之后，修改以下常量为生成的game_code名
-    private static final String EGRET_PUBLISH_ZIP = "game_code_160707194256.zip";
+    private static final String EGRET_PUBLISH_ZIP = "game_code_160708152746.zip";
     protected static final String TAG = "puzzle_android";
 
     private EgretGameEngine gameEngine;
