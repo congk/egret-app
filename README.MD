@@ -20,13 +20,13 @@
 ---
 
 ###发布ios及android包
-+ 进入tools/appBuilder文件夹，修改文件夹内的三个.properties文件：
-- build.properties：项目基本配置
-- android.properties：android发包配置
-- ios.properties：ios发包配置
-+ 配置完成后通过命令行进入到tools/appBuilder目录下，调用`ant android`或`ant ios`进行打包
+1. 进入tools/appBuilder文件夹，修改文件夹内的三个.properties文件：
+	- build.properties：项目基本配置
+	- android.properties：android发包配置
+	- ios.properties：ios发包配置
+2. 配置完成后通过命令行进入到tools/appBuilder目录下，调用`ant android`或`ant ios`进行打包
 
 参考资料：
-> http://blog.csdn.net/liuhe688/article/details/6679879
-> http://blog.csdn.net/a85907468/article/details/27224061
-> http://www.cnblogs.com/basenet855x/p/4314166.html
+> 1. http://blog.csdn.net/liuhe688/article/details/6679879
+> 2. http://blog.csdn.net/a85907468/article/details/27224061
+> 3. http://www.cnblogs.com/basenet855x/p/4314166.html
