@@ -124,15 +124,30 @@
 	</target>
 
 	<!-- 打包ios版本 -->
-	<target name="ios" description="build release version for ios">
-		<echo message="Sorry, 没写完呢！"/>
-	</target>
-	<target name="ios-debug" description="build debug version for ios">
-		<echo message="Sorry, 没写完呢！"/>
+	<target name="ios">
+		<!-- 引入安卓配置 -->
+		<property file="ios.properties"/>
+		<property name="app" value="${root}/build/${name}_${version}.app"/>
+		<property name="ipa" value="${basedir}/${name}_${version}.ipa"/>
+		<!-- xcodebuild clean -->
+		<exec executable="/bin/bash" dir="${root}">
+			<arg value="-c"/>
+			<arg value="xcodebuild clean"/>
+		</exec>
+		<!-- 生成.app -->
+		<exec executable="/bin/bash" dir="${root}">
+			<arg value="-c"/>
+			<arg value="xcodebuild CODE_SIGN_IDENTITY='${sign}' PROVISIONING_PROFILE=${provisionUUID}"/>
+		</exec>
+		<!-- 生成.ipa -->
+		<exec executable="/bin/bash" dir="${root}">
+			<arg value="-c"/>
+			<arg value="xcrun -sdk iphoneos PackageApplication -v ${root} -o ${ipa}"/>
+		</exec>
 	</target>
 
 	<!-- default -->
 	<target name="default">
-		<echo message="请添加一个参数：android | ios | ios-debug"/>
+		<echo message="请添加一个参数：android | ios"/>
 	</target>
 </project>

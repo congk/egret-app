@@ -11,7 +11,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 
 
-#define EGRET_PUBLISH_ZIP @"game_code_xxxx.zip"
+#define EGRET_PUBLISH_ZIP @"game_code_160707194256.zip"
 
 @interface ViewController ()
 {
@@ -183,7 +183,7 @@
     _options[@OPTION_GAME_ID] = @"local";
 
     // 设置游戏加载的方式
-    [self setLoaderUrl:2];
+    [self setLoaderUrl:0];
 
     // 设置加载进度条，请参考修改LoadingView即可，网络下载资源时打开
     [EgretRuntime getInstance].egretRootView.progressViewDelegate = [[LoadingView alloc] initWithContainerFrame:self.view.frame];

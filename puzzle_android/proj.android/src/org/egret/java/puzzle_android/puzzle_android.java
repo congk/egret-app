@@ -22,7 +22,7 @@ public class puzzle_android extends Activity {
     
     private static final String EGRET_ROOT = "egret";
     //TODO: egret publish之后，修改以下常量为生成的game_code名
-    private static final String EGRET_PUBLISH_ZIP = "game_code_0123456789.zip";
+    private static final String EGRET_PUBLISH_ZIP = "game_code_160707194256.zip";
     protected static final String TAG = "puzzle_android";
 
     private EgretGameEngine gameEngine;
@@ -42,7 +42,7 @@ public class puzzle_android extends Activity {
         egretRoot = new File(getFilesDir(), EGRET_ROOT).getAbsolutePath();
         gameId = "local";
         //TODO: DEBUG 使用 2
-        setLoaderUrl(2);
+        setLoaderUrl(0);
         gameEngine = new EgretGameEngine();
         // 设置游戏的选项  (set game options)
         HashMap<String, Object> options = getGameOptions();
