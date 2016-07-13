@@ -43,8 +43,8 @@ class Main extends egret.DisplayObjectContainer {
     private onAddToStage(event:egret.Event) {
         //设置加载进度界面
         //Config to load process interface
-        // this.loadingView = new LoadingUI();
-        // this.stage.addChild(this.loadingView);
+        this.loadingView = new LoadingUI();
+        this.stage.addChild(this.loadingView);
 
         //初始化Resource资源加载库
         //initiate Resource loading library
