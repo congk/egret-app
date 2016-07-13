@@ -43,8 +43,8 @@ class Main extends egret.DisplayObjectContainer {
     private onAddToStage(event:egret.Event) {
         //设置加载进度界面
         //Config to load process interface
-        this.loadingView = new LoadingUI();
-        this.stage.addChild(this.loadingView);
+        // this.loadingView = new LoadingUI();
+        // this.stage.addChild(this.loadingView);
 
         //初始化Resource资源加载库
         //initiate Resource loading library
@@ -58,6 +58,55 @@ class Main extends egret.DisplayObjectContainer {
      */
     private onConfigComplete(event:RES.ResourceEvent):void {
         RES.removeEventListener(RES.ResourceEvent.CONFIG_COMPLETE, this.onConfigComplete, this);
+        //native版本可获取到变更的素材，非native版本获取到的array长度为0
+        var array: any[] = RES.getVersionController().getChangeList();
+        if(array.length){
+            this.createUpdateView(array);
+        } else {
+            this.startGame();
+        }
+    }
+
+    private createUpdateView(arr){
+        // var totalSize = arr.reduce(function(item1, item2){
+        //     return item1.size + item2.size;
+        // });
+        var totalSize = 0;
+        arr.forEach((item)=>totalSize += item.size);
+        var loaded = 0;
+        
+        var alert = new egret.TextField();
+        alert.textColor = 0xfffffff;
+        alert.width = this.stage.stageWidth;
+        alert.textAlign = "center";
+        alert.y = this.stage.stageHeight / 3;
+        alert.size = 24;
+        this.stage.addChild(alert);
+        updateText();
+        var _this = this;
+        (function loadArr(arr){
+            if(arr.length){
+                var info = arr.pop();
+                RES.getResByUrl(RES.getVersionController().getVirtualUrl(info.url), ()=>{
+                    loaded += info.size;
+                    updateText();
+                    loadArr(arr);
+                }, null);
+            } else {
+                loaded = totalSize;
+                updateText();
+                egret.callLater(()=>{
+                    _this.stage.removeChild(alert);
+                    _this.startGame();
+                }, null);
+            }
+        })(arr);
+        function updateText(){
+            alert.text = "检查到版本更新，开始下载相关资源...\n\n" + loaded + " / " + totalSize;
+        }
+    }
+
+    private startGame(){
         RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.onResourceLoadComplete, this);
         RES.addEventListener(RES.ResourceEvent.GROUP_LOAD_ERROR, this.onResourceLoadError, this);
         RES.addEventListener(RES.ResourceEvent.GROUP_PROGRESS, this.onResourceProgress, this);
@@ -169,7 +218,7 @@ class Main extends egret.DisplayObjectContainer {
 
         //根据name关键字，异步获取一个json配置文件，name属性请参考resources/resource.json配置文件的内容。
         // Get asynchronously a json configuration file according to name keyword. As for the property of name please refer to the configuration file of resources/resource.json.
-        RES.getResAsync("description_json", this.startAnimation, this)
+        // RES.getResAsync("description_json", this.startAnimation, this);
     }
 
     /**
@@ -225,5 +274,3 @@ class Main extends egret.DisplayObjectContainer {
         textfield.textFlow = textFlow;
     }
 }
-
-

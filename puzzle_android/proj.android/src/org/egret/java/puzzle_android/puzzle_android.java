@@ -22,7 +22,7 @@ public class puzzle_android extends Activity {
     
     private static final String EGRET_ROOT = "egret";
     //TODO: egret publish之后，修改以下常量为生成的game_code名
-    private static final String EGRET_PUBLISH_ZIP = "game_code_160708152746.zip";
+    private static final String EGRET_PUBLISH_ZIP = "game_code_160713173757.zip";
     protected static final String TAG = "puzzle_android";
 
     private EgretGameEngine gameEngine;
@@ -42,7 +42,8 @@ public class puzzle_android extends Activity {
         egretRoot = new File(getFilesDir(), EGRET_ROOT).getAbsolutePath();
         gameId = "local";
         //TODO: DEBUG 使用 2
-        setLoaderUrl(0);
+        //只有1时可支持热更新
+        setLoaderUrl(1);
         gameEngine = new EgretGameEngine();
         // 设置游戏的选项  (set game options)
         HashMap<String, Object> options = getGameOptions();
@@ -91,8 +92,10 @@ public class puzzle_android extends Activity {
         case 1:
             // http request zip RELEASE mode, use permission INTERNET
             // 请求网络zip包发布模式，需要权限 INTERNET
-            loaderUrl = "http://www.example.com/" + EGRET_PUBLISH_ZIP;
-            updateUrl = "http://www.example.com/";
+            // loaderUrl = "http://www.example.com/" + EGRET_PUBLISH_ZIP;
+            // updateUrl = "http://www.example.com/";
+            loaderUrl = "http://10.0.11.44:3000/server/config.json";
+            updateUrl = "";
             break;
         default:
             // local zip RELEASE mode, default mode, `egret publish -compile --runtime native`

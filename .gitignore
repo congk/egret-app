@@ -8,3 +8,4 @@ puzzle_android/proj.android/gen/
 tools/keys/*
 *.apk
 *.ipa
+.idea

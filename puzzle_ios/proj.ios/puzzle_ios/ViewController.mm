@@ -11,7 +11,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 
 
-#define EGRET_PUBLISH_ZIP @"game_code_160708152746.zip"
+#define EGRET_PUBLISH_ZIP @"game_code_160713173757.zip"
 
 @interface ViewController ()
 {
