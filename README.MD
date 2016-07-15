@@ -28,6 +28,7 @@
 	- ios.properties：ios发包配置
 3. 配置完成后通过命令行进入到tools/appBuilder目录下，调用`ant android`或`ant ios`进行打包，最终会在该目录下生成.apk或.ipa文件
 
+---
 
 ###安卓热更新设置：
 1. 修改android工程的java入口类，修改`setLoaderUrl(0)`为`setLoaderUrl(1)`
