@@ -9,3 +9,5 @@ tools/keys/*
 *.apk
 *.ipa
 .idea
+server/bin/*
+server/node_modules/*

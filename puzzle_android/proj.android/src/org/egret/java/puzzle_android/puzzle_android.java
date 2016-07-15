@@ -94,7 +94,7 @@ public class puzzle_android extends Activity {
             // 请求网络zip包发布模式，需要权限 INTERNET
             // loaderUrl = "http://www.example.com/" + EGRET_PUBLISH_ZIP;
             // updateUrl = "http://www.example.com/";
-            loaderUrl = "http://10.0.11.44:3000/server/config.json";
+            loaderUrl = "http://10.0.11.44:3000/config.json";
             updateUrl = "";
             break;
         default:

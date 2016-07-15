@@ -9,6 +9,7 @@
 - puzzle：web工程目录
 - puzzle_ios：ios工程目录
 - puzzle_android：android工程目录
+- server：本地静态文件服务器，用来为app提供runtime（包含app）热更新测试入口
 - tools：app打包工具及配置
 	+ egret-ios-support-3.1.3：ios打包工具
 	+ egret-android-support-3.1.3：android打包工具
@@ -26,6 +27,13 @@
 	- android.properties：android发包配置
 	- ios.properties：ios发包配置
 3. 配置完成后通过命令行进入到tools/appBuilder目录下，调用`ant android`或`ant ios`进行打包，最终会在该目录下生成.apk或.ipa文件
+
+
+###安卓热更新设置：
+1. 修改android工程的java入口类，修改`setLoaderUrl(0)`为`setLoaderUrl(1)`
+2. 修改`setLoaderUrl`方法中的`case 1`分支逻辑，使`loaderUrl`值赋值为本地服务中提供的runtime入口json文件路径，此例中为`http://10.0.11.44:8080/config.json`
+3. 修改config.json文件中的**loaderUrl**与**updateUrl**值，该文件为runtime入口配置文件，参考[egret官网说明](http://open.egret.com/Wiki?mid=2&cid=11)
+4. 启动本地测试服务，进入到egret-app/server目录，命令行调用：`node index`
 
 参考资料：
 > 1. http://blog.csdn.net/liuhe688/article/details/6679879
