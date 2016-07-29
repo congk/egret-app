@@ -28,11 +28,13 @@
 	- ios.properties：ios发包配置
 3. 配置完成后通过命令行进入到tools/appBuilder目录下，调用`ant android`或`ant ios`进行打包，最终会在该目录下生成.apk或.ipa文件
 
+**注意：build.properties中`name`值若使用中文，则推荐修改build.xml，注释掉修改app名称的步骤，因为使用ant工具对文本内容进行替换的过程中，被替换的中文字符可能会显示为乱码，这是由于ant操作文件时所使用的字符集导致的**
+
 ---
 
-###安卓热更新设置：
+###安卓热更新测试：
 1. 修改android工程的java入口类，修改`setLoaderUrl(0)`为`setLoaderUrl(1)`
-2. 修改`setLoaderUrl`方法中的`case 1`分支逻辑，使`loaderUrl`值赋值为本地服务中提供的runtime入口json文件路径，此例中为`http://10.0.11.44:8080/config.json`
+2. 修改`setLoaderUrl`方法中的`case 1`分支逻辑，使`loaderUrl`值赋值为本地服务中提供的runtime入口，此例中为`http://10.0.11.44:8080/config.json`
 3. 修改config.json文件中的**loaderUrl**与**updateUrl**值，该文件为runtime入口配置文件，参考[egret官网说明](http://open.egret.com/Wiki?mid=2&cid=11)
 4. 启动本地测试服务，进入到egret-app/server目录，命令行调用：`node index`
 

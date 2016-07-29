@@ -43,7 +43,7 @@ public class puzzle_android extends Activity {
         gameId = "local";
         //TODO: DEBUG 使用 2
         //只有1时可支持热更新
-        setLoaderUrl(1);
+        setLoaderUrl(2);
         gameEngine = new EgretGameEngine();
         // 设置游戏的选项  (set game options)
         HashMap<String, Object> options = getGameOptions();

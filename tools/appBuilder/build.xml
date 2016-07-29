@@ -16,6 +16,22 @@
 		<mkdir dir="${gen}"/>
 		<mkdir dir="${classes}"/>
 
+		<!-- 修改AndroidManifest.xml中的版本号 -->
+		<echo message="========== 修改版本号 =========="/>
+		<replaceregexp flags="g" byline="false"> 
+			<regexp pattern="android:versionName=&quot;(\S*)&quot;"/>
+			<substitution expression="android:versionName=&quot;${version}&quot;"/> 
+			<fileset file="${root}/AndroidManifest.xml"/>
+		</replaceregexp>
+
+		<!-- 修改res/value/strings.xml中的app名称 -->
+		<echo message="========== 修改app名称 =========="/>
+		<replaceregexp flags="g" byline="false"> 
+			<regexp pattern="name=&quot;app_name&quot;&gt;(\S*)&lt;"/> 
+			<substitution expression="name=&quot;app_name&quot;&gt;${name}&lt;"/>
+			<fileset file="${root}/res/values/strings.xml"/>
+		</replaceregexp>
+		
 		<!-- 生成R.java，目标文件夹必须提前初始化，否则会报错 -->
 		<echo message="========== 生成R.java文件 =========="/>
 		<exec executable="${aapt}" failonerror="true">
