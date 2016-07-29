@@ -1,3 +1,7 @@
+该示例中使用到了Apache Ant，请提前自行下载安装
+
+---
+
 ###工程创建流程：
 1. 创建web工程：`egret create puzzle [--type game]`
 2. 创建ios工程：`egret create_app puzzle_ios -f puzzle -t tools/egret-ios-support-3.1.3`
