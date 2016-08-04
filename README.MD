@@ -48,5 +48,4 @@
 > 3. http://www.cnblogs.com/basenet855x/p/4314166.html
 
 ---
-如果您有任何的建议，请联系我：
-qq：363959579 ｜ email：kongcong@egret.com
+如果您有任何的建议，请联系我：kongcong@egret.com | 363959579@qq.com
