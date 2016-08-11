@@ -5,9 +5,11 @@
 *.framework
 puzzle_android/proj.android/bin/
 puzzle_android/proj.android/gen/
-tools/keys/*
 *.apk
 *.ipa
 .idea
 server/bin/*
 server/node_modules/*
+temp/*
+egret-android-support/*
+egret-ios-support/*
